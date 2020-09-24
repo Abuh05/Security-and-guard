@@ -1,0 +1,269 @@
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+.active{
+   color :#d4780e;
+}
+h1, h2,h3{
+    font-weight: 900;
+}
+h4, h5, h6{
+    font-weight: 700;
+}
+.btn-outline-secondary{
+    background-color: transparent !important;
+    border-color: #011627 !important;
+    color: #011627 !important;
+    border-radius: 0;
+    position: relative;
+}
+.btn-outline-secondary:before{
+    content: "";
+    position: absolute;
+    background-color: #83f3ed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: 0%;
+    z-index: -1;
+    transition: 0.5s;
+}
+.btn-outline-secondary:hover:before{
+    width: 100%;
+}
+.btn-secondary{
+    background-color: #011627 !important;
+    border-radius: 0;
+    border-color: #011627 !important;
+}
+.btn-secondary:hover{
+    color: #83f3ed !important;
+}
+.btn-primary{
+    background-color: #83f3ed !important;
+    border-radius: 0;
+    border-color: #83f3ed !important;
+    color: #011627 !important;
+}
+.btn-primary:hover{
+    background: #011627 !important;
+    color: #83f3ed !important;
+}
+.action{
+    display: flex;
+}
+
+/*
+Navbar
+*/
+.navbar{
+    background: #fff;
+    border-bottom: 1px solid #eee;
+}
+.nav-link, .navbar-brand{
+    color: #011627;
+}
+.nav-link:hover, .navbar-brand:hover{
+    color: #777;
+}
+.navbar-brand{
+    font-size: 1.8rem;
+}
+/*
+Call to action
+*/
+.call-to-action{
+    background: #011627;
+    color: #fafaff;
+}
+.heading-line{
+    height: 3px;
+    width: 10%;
+    background: #83f3ed;
+}
+/*
+Service
+*/
+.service i{
+    font-size: 5rem;
+    color: #83f3ed;
+}
+
+/*
+Team
+*/
+.team h4{
+    font-family: 'Raleway' sans-serif;
+    font-size: 25px;
+    color: #555;
+    font-weight: 900;
+}
+#team img{
+    margin-top: -50px;
+}
+#team i{
+    font-size: 26px;
+    color: #555;
+}
+#team p{
+    font-weight: 500;
+}
+#team .card{
+    border-radius: 0;
+    box-shadow: 5px 5px 15px #011627;
+    transition: all 0.3s ease-in;
+    -webkit-transition: all 0.3s ease-in;
+    -moz-transition: all 0.3s ease-in;
+}
+#team .card:hover{
+background: #011627;
+color: #fff;
+border-radius: 5px;
+border: none;
+box-shadow: 5px 5px 10px #011627;
+}
+#team .card:hover h3, #team .card:hover i{
+    color: #fff;
+}
+/*
+About page
+*/
+.executive{
+    margin-top: 90px;
+}
+.border-right{
+    height: 90rem;
+}
+h3:after{
+    content: "";
+    display: block;
+    width: 160px;
+    height: 2px;
+    background-color: #7c9ee6;
+    position: absolute;
+    left: 22rem;
+    top: 25px;
+}
+.biggy{
+    padding: 50px;
+    background: #011627;
+    margin-top: 60px;
+}
+.about{
+    color: #7c9ee6;
+}
+/*
+Mission Page
+*/
+
+.showcase{
+    background-color: #011627;
+    display: grid;
+    grid-template-columns: (2, 1fr);
+    column-gap: 10px;
+    margin-top: 7rem;  
+}
+
+.text{
+    position: absolute;
+    left: 20%;
+    top: 30%;
+    
+}
+.text h2{
+    color: #fff;
+    font-weight: 900;
+    padding: 10px;
+}
+.boda::before{
+    content: '';
+    position: absolute;
+    width: 5px;
+    height: 50px;
+    background-color: #d4780e;
+    left: -2%;
+}
+.span{
+    text-transform:initial;
+    color: #fff;
+    text-align: justify;
+}
+/*
+Contact Page
+*/
+.contact{
+    margin-top: 80px;
+}
+/*
+Carousel
+*/
+.section-padding{
+    padding: 15px 0;
+}
+.owl-dot{
+    display: inline-block;
+    height: 15px !important;
+    width: 15px !important;
+    background-color: #011627 !important;
+    border-radius: 50%;
+    margin: 0 5px;
+}
+.owl-dots{
+    text-align:center;
+}
+.owl-dot.active{
+    background-color: #7c9ee6 !important;
+}
+/*
+Footer
+*/
+.footer{
+    background: #011627;
+    color: #fafaff;
+}
+.footer a{
+    color: #fafaff;
+}
+/*
+Resposive
+*/
+@media(max-width: 900px){
+    .navbar .nav-item{
+        display: block;
+        width: 100%;
+        padding: 10px 0px;
+        text-align: center;
+    }
+    .call-to-action .container{
+        width: 100% !important;
+    }
+}
+/*Preloader*/
+.loader {
+    position: fixed;
+    z-index: 99;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: white;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.loader > img {
+    width: 100px;
+}
+
+.loader.hidden {
+    animation: fadeOut 10s;
+    animation-fill-mode: forwards;
+}
+
+@keyframes fadeOut {
+    100% {
+        opacity: 0;
+        visibility: hidden;
+    }
+}
